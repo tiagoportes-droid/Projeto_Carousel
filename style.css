@@ -51,36 +51,36 @@
   --raio-medio: 10px;
   --raio-grande: 15px;
 }
-* {
-  box-sizing: border-box;
-}
 
-body {
-  min-width: 243px;
+main {
+  width: 100%;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  border: 0.3rem solid ;
-  background: var(--bege);
+  border: var(--borda);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+.conteiner {
+  width: 70%;
+  height: 90px;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--marrom-secundario);
+  box-shadow: var(--sombra);
 }
 
-.conteiner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--marrom-secundario);
-    width: 70%;
-    height: 90px;
-    border: 2px solid;
+#BtnEsquerda, 
+#BtnDireita{
+    cursor: pointer;
+    padding: 1rem;
+    user-select: none;
+}
 
+.Carousel{
+    width: 50%;
+    height: 30%;
 }
